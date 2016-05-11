@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/lodash.min.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/desktop.js"></script>
+    <script type="text/javascript" src="js/mobile.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+      .buttons {
+        overflow-x: hidden;
+        position: absolute;
+        background-color: #1b1b1b;
+        text-align: center;
+        height: 5%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+      }
+      #results {
+        background-color: #eee;
+      }
+      .result {
+        font-size: 260%;
+        font-weight: 250;
+        margin: 8px;
+      }
+      .page-header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+      }
+      canvas{
+        cursor:crosshair ;
+        border-top: dotted 2px #1b1b1b;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        bottom: 5%;
+        overflow:hidden;
+        background-color:#fff;
+      }
+      h4{
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="page-header">
+        <h4>KvgCharacterRecognition</h4>
+        <br/>
+        <span id="time"></span>
+        <div id="results">
+        </div>
+      </div>
+      <canvas id="pad">
+      </canvas>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-primary" id="cleanAll">Clear All</button>
+      <button class="btn btn-primary" id="cleanLast">Clear Last</button>
+      <button class="btn btn-primary" id="save">Save</button>
+    </div>
+  </body>
+</html>
