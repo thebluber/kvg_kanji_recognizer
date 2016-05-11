@@ -1,9 +1,10 @@
 # kvg_kanji_recognizer
 This kanji handwriting recognizer, which is dependent of the correct stroke order and stroke numbers, uses the [KanjiVG](https://github.com/KanjiVG/kanjivg) data as templates. As the first step, a kanji is translated into a code sequence as shown in the graphs.
 
-[image](./encoder.png?raw=true)
+![image](https://raw.githubusercontent.com/thebluber/kvg_kanji_recognizer/master/encoder.png?raw=true)
 
-[image](./sample_kyo.png?raw=true)
+![image](https://raw.githubusercontent.com/thebluber/kvg_kanji_recognizer/master/sample_kyo.png)
+
 The code sequence of 京 is "6161B1556".
 
 The recognizer uses levenshtein distance to calculate the difference between 2 code sequences.
